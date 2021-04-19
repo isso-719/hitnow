@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var resMicroSec = result.inMicroseconds;
     var resSec = result.inSeconds;
     setState(() {
-      _stats = resSec.toString() + "." + resMicroSec.toString();
+      _stats = "結果: " + resSec.toString() + "." + resMicroSec.toString() + "s";
       _isVisibleStart = !_isVisibleStart;
       _isVisibleHitNow = !_isVisibleHitNow;
     });
